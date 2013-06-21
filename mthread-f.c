@@ -25,7 +25,7 @@ int main(void)
 	int i = 0;
 
 	pthread_create(&pth,NULL,threadFunc,"foo");
-	
+
 	while(i < 100)
 	{
 		usleep(1);
