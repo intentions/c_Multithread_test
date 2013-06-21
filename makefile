@@ -1,10 +1,16 @@
-all: test
+all: M_stress_test cpu_count mthread
 
-test: test.o
-	gcc -o test -lpthread test.o
+M_stress_test: main.o cpu_count.o
+	gcc -o M_stress_test -lpthread main.o cpu_count.o
 
-test.o: test.c
-	gcc -c test.c
+main: main.o
+	gcc -c main.c
+
+cpu_count.o: cpu_count.c
+	gcc -c cpu_count-f.c
+
+mthread.o:
+	gcc -c mthread-f.c
 
 clean:
-	rm -rf *.0 test
+	rm -rf *.o M_stress_test
