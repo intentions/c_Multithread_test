@@ -1,0 +1,6 @@
+This is a test of multithreaded code in c.
+
+The final product "should be" a program that will count the nubmer
+of cores on a computer and then launch threads equal to cores-1.
+
+The threads will run a computationally intensive program (probably factoring or some such).
