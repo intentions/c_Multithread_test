@@ -1,4 +1,4 @@
-//pu core counting program
+//cpu core counting program
 
 #include <unistd.h>
 #include <stdio.h>
