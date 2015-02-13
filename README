@@ -12,4 +12,3 @@ thread generation is working
 Need to be done:
 Factoring program
 Tying number of threads generated to number of cpus
-waka
